@@ -1,13 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: "class",
-  content: {
-    relative: true,
-    "./public/index.html",
-    "./src/components/Home.js",
-    "./src/styles/craco.config.js"
-  ],
-},
+  content: ["./**/*.{html,js}"],
   theme: {
     extend: {
       fontFamily: {
