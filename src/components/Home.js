@@ -61,8 +61,7 @@ function Home() {
             <AiFillYoutube />
           </div>
           <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
-            <img src={Headshot} alt="Headshot of Brittany Blalock"
-            />
+            <img src={Headshot} alt="Headshot of Brittany Blalock" />
           </div>
         </section>
 
@@ -152,6 +151,7 @@ function Home() {
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
+                alt="photo of Bootcamp Fitness logo"
                 src={BootcampFitness}
               />
               <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
@@ -166,6 +166,7 @@ function Home() {
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
+                alt="photo of Tournimate logo"
                 src={Tournimate}
               />
               <p className="text-gray-800 py-1">
