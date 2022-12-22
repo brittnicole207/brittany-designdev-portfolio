@@ -11,8 +11,9 @@ import PasswordGen from '../images/password-gen.png';
 import Tournimate from "../images/tournimate.jpeg";
 import BootcampFitness from "../images/bootcampfitness.png";
 
-function Home() {
+export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
+
   return (
     <div className={darkMode ? "dark" : ""}>
       <header>
@@ -29,7 +30,7 @@ function Home() {
               <li>
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
-                  className="cursor-pointer text-2xl"
+                  className=" cursor-pointer text-2xl"
                 />
               </li>
               <li>
@@ -84,10 +85,8 @@ function Home() {
                 Web Development & Code
               </h3>
               <p className="text-gray-800 py-1">HTML</p>
-              <p className="text-gray-800 py-1">CSS</p>
+              <p className="text-gray-800 py-1">CSS and Tailwind</p>
               <p className="text-gray-800 py-1">Javascript</p>
-              <p className="text-gray-800 py-1">React</p>
-              <p className="text-gray-800 py-1">Tailwind</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               {/*<Image src={design} width={100} height={100} />*/}
@@ -109,6 +108,7 @@ function Home() {
             </div>
           </div>
         </section>
+
         {/* Card for Portfolio */}
         <section className="py-10">
           <div>
@@ -120,15 +120,16 @@ function Home() {
               API's. Below you will see some of my work.
             </p>
           </div>
+
           {/* Container with Portfolio Projects */}
-          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+          <div className="grid grid-cols-1 gap-4 lg:grid-cols-4 sm:grid-cols-2">
             {/* First Portfolio Project */}
             <div className="basis-1/3 flex-1 ">
-              <h4 className="py-2 text-teal-600 font-medium dark:text-teal-400">
+              {/*<h4 className="py-2 text-teal-600 font-medium dark:text-teal-400">
                 Password Generator
-              </h4>
+              </h4>*/}
               <img
-                className="rounded-lg object-cover"
+                className="object-cover w-full border"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
@@ -136,15 +137,14 @@ function Home() {
                 alt="password-generator-screenshot"
               />
               <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-                The password generator will allow the user to generate a
-                password of a variety of characters and numbers.
+                Password Generator
               </p>
             </div>
             <div className="basis-1/3 flex-1 ">
               <h4 className="py-2 text-teal-600 font-medium dark:text-teal-400">
-                <a href="https://blooming-forest-36438.herokuapp.com/">
+                {/*<a href="https://blooming-forest-36438.herokuapp.com/">
                   Bootcamp Fitness
-                </a>
+                </a>*/}
               </h4>
               <img
                 className="rounded-lg object-cover"
@@ -154,13 +154,12 @@ function Home() {
                 alt="Bootcamp Fitness logo"
                 src={BootcampFitness}
               />
-              <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-                I collaborated with other web developers to build Bootcamp
-                Fitness which allows the user to add and plan workouts.
+              <p className="text-md py-2 leading-8 dark:text-gray-200">
+                Bootcamp Fitness
               </p>
             </div>
             <div className="basis-1/3 flex-1 ">
-              <h4 className="py-4 text-teal-600">TourniMate</h4>
+              {/*<h4 className="py-4 text-teal-600">TourniMate</h4>*/}
               <img
                 className="rounded-lg object-cover"
                 width={"100%"}
@@ -169,10 +168,7 @@ function Home() {
                 alt="Tournimate logo"
                 src={Tournimate}
               />
-              <p className="text-gray-800 py-1">
-                I collaborated with other web developers to build TourniMate
-                which allows golfers to search and sign up for events.
-              </p>
+              <p className="text-gray-800 py-1">Tournimate</p>
             </div>
           </div>
         </section>
@@ -180,5 +176,3 @@ function Home() {
     </div>
   );
 }
-
-export default Home;
