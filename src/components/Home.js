@@ -1,13 +1,9 @@
 import React from "react";
 import { useState } from "react";
 import { BsFillMoonStarsFill } from "react-icons/bs";
-import {
-  AiFillLinkedin,
-  AiFillTwitterCircle,
-  AiFillYoutube,
-} from "react-icons/ai";
-import Headshot from '../images/headshot.jpeg';
-import PasswordGen from '../images/password-gen.png';
+import { AiFillLinkedin, AiOutlineGithub, AiFillYoutube } from "react-icons/ai";
+import Headshot from "../images/headshot.jpeg";
+import PasswordGen from "../images/password-gen.png";
 import Tournimate from "../images/tournimate.jpeg";
 import BootcampFitness from "../images/bootcampfitness.png";
 
@@ -30,13 +26,13 @@ export default function Home() {
               <li>
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
-                  className=" cursor-pointer text-2xl"
+                  className="cursor-pointer text-2xl"
                 />
               </li>
               <li>
                 <a
                   className="bg-cyan-500 text-white px-4 py-2 rounded-md ml-8"
-                  href="www.google.com"
+                  href="https://docs.google.com/document/d/1V4bokPF8SZwzIzUGsM0w-kU7fPInKWS0Sf37uYdVi7s/edit"
                 >
                   Resume
                 </a>
@@ -57,7 +53,7 @@ export default function Home() {
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-            <AiFillTwitterCircle />
+            <AiOutlineGithub />
             <AiFillLinkedin />
             <AiFillYoutube />
           </div>
@@ -112,22 +108,15 @@ export default function Home() {
         {/* Card for Portfolio */}
         <section className="py-10">
           <div>
-            <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
+            <h3 className="mb-3 text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
               Portfolio
-            </h2>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              I have done work in web development, software, coding, third-party
-              API's. Below you will see some of my work.
-            </p>
+            </h3>
           </div>
 
           {/* Container with Portfolio Projects */}
           <div className="grid grid-cols-1 gap-4 lg:grid-cols-4 sm:grid-cols-2">
             {/* First Portfolio Project */}
             <div className="basis-1/3 flex-1 ">
-              {/*<h4 className="py-2 text-teal-600 font-medium dark:text-teal-400">
-                Password Generator
-              </h4>*/}
               <img
                 className="object-cover w-full border"
                 width={"100%"}
@@ -136,16 +125,11 @@ export default function Home() {
                 src={PasswordGen}
                 alt="password-generator-screenshot"
               />
-              <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-                Password Generator
-              </p>
             </div>
             <div className="basis-1/3 flex-1 ">
-              <h4 className="py-2 text-teal-600 font-medium dark:text-teal-400">
-                {/*<a href="https://blooming-forest-36438.herokuapp.com/">
+              {/*<a href="https://blooming-forest-36438.herokuapp.com/">
                   Bootcamp Fitness
                 </a>*/}
-              </h4>
               <img
                 className="rounded-lg object-cover"
                 width={"100%"}
@@ -154,12 +138,8 @@ export default function Home() {
                 alt="Bootcamp Fitness logo"
                 src={BootcampFitness}
               />
-              <p className="text-md py-2 leading-8 dark:text-gray-200">
-                Bootcamp Fitness
-              </p>
             </div>
             <div className="basis-1/3 flex-1 ">
-              {/*<h4 className="py-4 text-teal-600">TourniMate</h4>*/}
               <img
                 className="rounded-lg object-cover"
                 width={"100%"}
@@ -168,7 +148,6 @@ export default function Home() {
                 alt="Tournimate logo"
                 src={Tournimate}
               />
-              <p className="text-gray-800 py-1">Tournimate</p>
             </div>
           </div>
         </section>
