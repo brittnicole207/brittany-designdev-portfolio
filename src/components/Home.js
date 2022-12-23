@@ -6,7 +6,7 @@ import Headshot from "../images/headshot.jpeg";
 import PasswordGen from "../images/password-gen.png";
 import Tournimate from "../images/tournimate.jpeg";
 import BootcampFitness from "../images/bootcampfitness.png";
-
+import WebDesign from "../images/web-design.png";
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
 
@@ -18,10 +18,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </header>
 
-      <main className="bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
+      <main className="px-10 bg-gray-900 md:px-20 lg:px-40">
         <section className="min-h-screen">
-          <nav className="py-10 mb-12 flex justify-between dark:text-white">
-            <h1>brittany design & development</h1>
+          <nav className="py-10 mb-12 flex justify-between text-white">
+            <h1>Britt Made It Design</h1>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
@@ -36,23 +36,22 @@ export default function Home() {
                 >
                   Resume
                 </a>
-
                 {/*<a type="button" className="btn btn-primary" href={resume} download>Download Resume</a>*/}
               </li>
             </ul>
           </nav>
           <div className="text-center p-10">
-            <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
+            <h2 className="text-5xl py-2 font-medium text-teal-400 md:text-6xl">
               Brittany Blalock
             </h2>
-            <h3 className="text-2xl py-2 md:text-3xl dark:text-white">
+            <h3 className="text-2xl py-2 md:text-3xl text-white">
               Designer and developer.
             </h3>
-            <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-              I create beautiful designs and webpages.
+            <p className="text-md py-5 leading-8 text-gray-200 max-w-xl mx-auto md:text-xl">
+              I design webpages that help your vision come to life.
             </p>
           </div>
-          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
+          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-400">
             <AiOutlineGithub />
             <AiFillLinkedin />
             <AiFillYoutube />
@@ -64,19 +63,22 @@ export default function Home() {
 
         <section>
           <div>
-            <p className="text-md py-2 y-5 leading-8 text-gray-800 dark:text-gray-200">
-              I have had the pleasure of working and learning at University of
-              Phoenix where I earned my Masters Degree in Adult Education and
-              Training. I worked as an Instructional designer at a SaaS start-up
-              company.
+            <p className="text-md py-2 y-5 leading-8 text-gray-200">
+              {/* Add Details Here */}
             </p>
           </div>
 
           {/* Card 1 - Design */}
           <div className="lg:flex gap-10">
             {/* Card 2 - Coding */}
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              {/*<Image src={design} width={100} height={100} />*/}
+            <div className="text-center content-center shadow-lg p-10 rounded-xl my-10 bg-white flex-1">
+              <div>
+                <img
+                  src={WebDesign}
+                  alt="Web Design"
+                  class="object-none object-center"
+                />
+              </div>
               <h3 className="text-lg font-medium pt-8 pb-2">
                 Web Development & Code
               </h3>
@@ -84,7 +86,7 @@ export default function Home() {
               <p className="text-gray-800 py-1">CSS and Tailwind</p>
               <p className="text-gray-800 py-1">Javascript</p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 bg-white flex-1">
               {/*<Image src={design} width={100} height={100} />*/}
               <h3 className="text-lg font-medium pt-8">
                 User Interface Design
@@ -95,7 +97,7 @@ export default function Home() {
             </div>
             {/* Card 3 - Design */}
 
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 bg-white flex-1">
               {/*<Image src={design} width={100} height={100} />*/}
               <h3 className="text-lg font-medium pt-8 pb-2">Graphic Design</h3>
               <p className="text-gray-800 py-1">Illustrator</p>
@@ -108,7 +110,7 @@ export default function Home() {
         {/* Card for Portfolio */}
         <section className="py-10">
           <div>
-            <h3 className="mb-3 text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
+            <h3 className="mb-3 text-5xl py-2font-medium text-teal-400 md:text-6xl">
               Portfolio
             </h3>
           </div>
@@ -116,38 +118,42 @@ export default function Home() {
           {/* Container with Portfolio Projects */}
           <div className="grid grid-cols-1 gap-4 lg:grid-cols-4 sm:grid-cols-2">
             {/* First Portfolio Project */}
-            <div className="basis-1/3 flex-1 ">
-              <img
-                className="object-cover w-full border"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={PasswordGen}
-                alt="password-generator-screenshot"
-              />
+            <div class="max-w-sm rounded-lg border shadow-md bg-gray-800 border-gray-700">
+              <a href="https://blooming-forest-36438.herokuapp.com/">
+                <img
+                  class="rounded-t-lg"
+                  src={BootcampFitness}
+                  alt="Bootcamp Fitness Website"
+                />
+              </a>
+              {/*<div class="p-5">
+                <a href="google.com">
+                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                    Bootcamp Fitness
+                  </h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                  Plan and track your workouts!
+                </p>
+              </div>*/}
             </div>
-            <div className="basis-1/3 flex-1 ">
-              {/*<a href="https://blooming-forest-36438.herokuapp.com/">
-                  Bootcamp Fitness
-                </a>*/}
-              <img
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                alt="Bootcamp Fitness logo"
-                src={BootcampFitness}
-              />
+            <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+              <a href="#">
+                <img
+                  class="rounded-t-lg"
+                  src={PasswordGen}
+                  alt="Password Generator Website"
+                />
+              </a>
             </div>
-            <div className="basis-1/3 flex-1 ">
-              <img
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                alt="Tournimate logo"
-                src={Tournimate}
-              />
+            <div class="max-w-sm bg-white rounded-lg border shadow-md dark:bg-gray-800 border-gray-700">
+              <a href="https://tournimate.herokuapp.com/">
+                <img
+                  class="rounded-t-lg"
+                  src={Tournimate}
+                  alt="Tournimate Website"
+                />
+              </a>
             </div>
           </div>
         </section>
