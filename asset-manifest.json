@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/brittany-designdev-portfolio/static/js/main.f6a633c0.js",
+    "main.js": "/brittany-designdev-portfolio/static/js/main.a8aee17c.js",
     "static/media/bootcampfitness.png": "/brittany-designdev-portfolio/static/media/bootcampfitness.d22f85bbcc75651cbaf3.png",
     "static/media/password-gen.png": "/brittany-designdev-portfolio/static/media/password-gen.dc15bdcbfec79acfb9a7.png",
     "static/media/tournimate.jpeg": "/brittany-designdev-portfolio/static/media/tournimate.18bdcaa4b61470d7deba.jpeg",
     "static/media/headshot.jpeg": "/brittany-designdev-portfolio/static/media/headshot.d399defeaa12db2c3570.jpeg",
     "index.html": "/brittany-designdev-portfolio/index.html",
-    "main.f6a633c0.js.map": "/brittany-designdev-portfolio/static/js/main.f6a633c0.js.map"
+    "main.a8aee17c.js.map": "/brittany-designdev-portfolio/static/js/main.a8aee17c.js.map"
   },
   "entrypoints": [
-    "static/js/main.f6a633c0.js"
+    "static/js/main.a8aee17c.js"
   ]
 }
