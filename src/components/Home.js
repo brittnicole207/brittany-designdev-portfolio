@@ -2,11 +2,12 @@ import React from "react";
 import { useState } from "react";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillLinkedin, AiOutlineGithub, AiFillYoutube } from "react-icons/ai";
-import Headshot from "../images/headshot.jpeg";
+import Headshot from "../images/headshot.png";
 import PasswordGen from "../images/password-gen.png";
 import Tournimate from "../images/tournimate.jpeg";
 import BootcampFitness from "../images/bootcampfitness.png";
 import WebDesign from "../images/web-design.png";
+import UiDesign from "../images/uidesign.png";
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
 
@@ -52,7 +53,10 @@ export default function Home() {
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-400">
-            <AiOutlineGithub />
+            <img
+              src={AiOutlineGithub}
+              href="https://github.com/brittnicole207"
+            />
             <AiFillLinkedin />
             <AiFillYoutube />
           </div>
@@ -67,49 +71,51 @@ export default function Home() {
               {/* Add Details Here */}
             </p>
           </div>
-
-          {/* Card 1 - Design */}
-          <div className="lg:flex gap-10">
-            {/* Card 2 - Coding */}
-            <div className="text-center content-center shadow-lg p-10 rounded-xl my-10 bg-white flex-1">
-              <div>
-                <img
-                  src={WebDesign}
-                  alt="Web Design"
-                  class="object-none object-center"
-                />
-              </div>
-              <h3 className="text-lg font-medium pt-8 pb-2">
-                Web Development & Code
-              </h3>
-              <p className="text-gray-800 py-1">HTML</p>
-              <p className="text-gray-800 py-1">CSS and Tailwind</p>
-              <p className="text-gray-800 py-1">Javascript</p>
-            </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 bg-white flex-1">
-              {/*<Image src={design} width={100} height={100} />*/}
-              <h3 className="text-lg font-medium pt-8">
-                User Interface Design
-              </h3>
-              <p className="text-gray-800 py-1">Adobe XD</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Sketch</p>
-            </div>
-            {/* Card 3 - Design */}
-
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 bg-white flex-1">
-              {/*<Image src={design} width={100} height={100} />*/}
-              <h3 className="text-lg font-medium pt-8 pb-2">Graphic Design</h3>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">InDesign</p>
-            </div>
-          </div>
         </section>
+
+        <div className="lg:flex gap-10">
+          {/* Card 1 - Web Design */}
+
+          <div className="text-center items-center shadow-lg p-10 rounded-xl my-10 bg-white flex-1">
+            <img
+              src={WebDesign}
+              alt="Web Design"
+              class="object-contain h-36 w-full"
+            />
+            <h3 className="text-lg font-medium pt-8 pb-2">
+              Web Development & Code
+            </h3>
+            <p className="text-gray-800 py-1">HTML</p>
+            <p className="text-gray-800 py-1">CSS and Tailwind</p>
+            <p className="text-gray-800 py-1">Javascript</p>
+          </div>
+
+          <div className="text-center shadow-lg p-10 rounded-xl my-10 bg-white flex-1">
+            <img
+              src={UiDesign}
+              alt="Web Design"
+              class="object-contain h-36 w-full"
+            />
+            <h3 className="text-lg font-medium pt-8">User Interface Design</h3>
+            <p className="text-gray-800 py-1">Adobe XD</p>
+            <p className="text-gray-800 py-1">Figma</p>
+            <p className="text-gray-800 py-1">Sketch</p>
+          </div>
+          {/* Card 3 - Design */}
+
+          <div className="text-center shadow-lg p-10 rounded-xl my-10 bg-white flex-1">
+            {/*<Image src={design} width={100} height={100} />*/}
+            <h3 className="text-lg font-medium pt-8 pb-2">Graphic Design</h3>
+            <p className="text-gray-800 py-1">Illustrator</p>
+            <p className="text-gray-800 py-1">Photoshop</p>
+            <p className="text-gray-800 py-1">InDesign</p>
+          </div>
+        </div>
 
         {/* Card for Portfolio */}
         <section className="py-10">
           <div>
+            .
             <h3 className="mb-3 text-5xl py-2font-medium text-teal-400 md:text-6xl">
               Portfolio
             </h3>
